@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-09-2024 a las 00:30:42
+-- Tiempo de generación: 24-09-2024 a las 22:20:44
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -79,7 +79,8 @@ CREATE TABLE `deducciones` (
 --
 
 INSERT INTO `deducciones` (`id_deduccion`, `descrip_deduccion`, `nro_documento`, `porcentaje_deduccion`, `created_at`, `updated_at`) VALUES
-(1, 'Descuento de EPS', '100281923', 0.11, '2024-09-19 09:04:48', '2024-09-19 09:04:48');
+(1, 'Descuento de EPS', '100281923', 0.11, '2024-09-19 09:04:48', '2024-09-19 09:04:48'),
+(2, 'Pruebaa siempre', '100002020', 1.20, '2024-09-24 23:54:30', '2024-09-24 23:54:30');
 
 -- --------------------------------------------------------
 
@@ -251,7 +252,8 @@ INSERT INTO `roles` (`id_rol`, `descp_rol`, `permisos`, `created_at`, `updated_a
 (2, 'Administrador Prueba', 'Prueba de guardar datos', '2024-08-13 01:36:12', '2024-08-13 01:36:12'),
 (3, 'Operador', 'Prueba Operador', '2024-08-13 08:25:05', '2024-08-13 08:25:05'),
 (4, 'Empresario', 'Consultar', '2024-09-19 05:53:05', '2024-09-19 05:53:05'),
-(5, 'Jefe', 'Mandar', '2024-09-19 06:00:20', '2024-09-19 06:00:20');
+(5, 'Jefe', 'Mandar', '2024-09-19 06:00:20', '2024-09-19 06:00:20'),
+(6, 'Prueba inserción', 'Administrador', '2024-09-25 01:00:37', '2024-09-25 01:00:37');
 
 -- --------------------------------------------------------
 
@@ -296,7 +298,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('qsDhnNJ2NMYET6oTEYh7un0T6eWu3zh8IO6Fvjoy', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 AVG/127.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoicDlrTU5mSmlFcGhQVE5Sa2lzcGlheUJQeEg0WWg5NGN1TTlKbGNGOSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9kZWR1Y2Npb25lcyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1726718708);
+('xLLEoMtTS1ef2JziuoCZkKfn9I4UzNoCgr9sal6t', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoibm4yRDFJRnpMbXd5NmR2ZXZUd3FyRzRNSkNjOWZ0U21BU1JjUFlTZiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9kZWR1Y2Npb25lcyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1727209115);
 
 -- --------------------------------------------------------
 
@@ -531,7 +533,7 @@ ALTER TABLE `cargos`
 -- AUTO_INCREMENT de la tabla `deducciones`
 --
 ALTER TABLE `deducciones`
-  MODIFY `id_deduccion` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_deduccion` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `empleados`
@@ -567,7 +569,7 @@ ALTER TABLE `nivel_riesgos`
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id_rol` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_rol` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `seguridad_socials`
